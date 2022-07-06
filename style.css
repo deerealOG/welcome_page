@@ -251,7 +251,7 @@ main {
   line-height: 140%;
   color: #262262;
   position: relative;
-  top: 50px;
+  top: 0px;
 }
 #fill {
   font-family: "Poppins";
@@ -260,12 +260,12 @@ main {
   font-size: 16px;
   line-height: 150%;
   position: relative;
-  top: 100px;
+  top: 20px;
   color: #f37821;
 }
 #inputField {
   position: relative;
-  top: 160px;
+  top: 70px;
   display: flex;
   flex-direction: column;
   gap: 50px;
