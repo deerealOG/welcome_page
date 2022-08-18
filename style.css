@@ -23,10 +23,10 @@ button {
   background: var(--primary-color);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 5px;
   width: 100%;
-  height: 80px;
+  height: 60px;
   transition: all 0.7s ease-in;
   position: relative;
   top: 0;
@@ -102,7 +102,7 @@ button {
 
 #yourcta {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 18%;
   display: flex;
 
@@ -147,7 +147,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0.625rem 1.25rem;
+  padding: 0.5rem 1rem;
 
   font-family: "Poppins";
   font-style: normal;
@@ -166,7 +166,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0.625rem 1.25rem;
+  padding: 0.5rem 1rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -189,12 +189,10 @@ button {
   cursor: pointer;
 }
 #logo img {
-  height: 3.375rem;
+  height: 40px;
 }
 
-#hamburger {
-  color: #ffffff;
-}
+
 #desktop {
   display: none;
 }
@@ -229,10 +227,10 @@ form i {
 
 .hamburger div {
   position: relative;
-  top: 3.5px;
+  top: 2px;
   right: 3vw;
-  width: 2.6rem;
-  height: 8px;
+  width: 2rem;
+  height: 4px;
   border-radius: 3px;
   background: #f37821;
   margin-top: 6px;
@@ -290,7 +288,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -298,26 +296,6 @@ Animations
   transform: scale(1);
 }
 
-/**
-Animations
-**/
-#toggle:checked + .hamburger .top-bun {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-#toggle:checked + .hamburger .bottom-bun {
-  opacity: 0;
-  transform: rotate(45deg);
-}
-#toggle:checked + .hamburger .meat {
-  transform: rotate(45deg);
-  margin-top: -8px;
-}
-
-#toggle:checked + .hamburger + .nav {
-  top: 0;
-  transform: scale(1);
-}
 #desktop {
   display: none;
 }
@@ -550,12 +528,18 @@ main {
   #desktop a:hover {
     color: #f37821;
   }
+  #logo img {
+    height: 45px;
+  }
 
   #yourcta {
     position: absolute;
     right: 5%;
   }
   .hamburger {
+    display: none;
+  }
+  .nav {
     display: none;
   }
 }
